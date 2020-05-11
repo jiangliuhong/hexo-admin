@@ -1,7 +1,14 @@
+import menus from '@/js/menus'
+
 export default {
     name: "asideIndex",
     data() {
-        return {};
+        return {
+            menus: menus
+        };
+    },
+    props:{
+        collapse: Boolean
     },
     methods: {
         handleOpen(key, keyPath) {
@@ -10,5 +17,8 @@ export default {
         handleClose(key, keyPath) {
             console.log(key, keyPath);
         }
+    },
+    mounted() {
+
     }
 }
