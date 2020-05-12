@@ -14,7 +14,7 @@
         <el-submenu v-if="menu.children && menu.children.length>=1" :index="menu.key">
           <template slot="title">
             <i :class="menu.icon"></i>
-            <span>{{menu.name}}</span>
+            <span slot="title">{{menu.name}}</span>
           </template>
           <el-menu-item
             v-for="(childMenu,cindex) in menu.children"

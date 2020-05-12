@@ -12,10 +12,10 @@ const menus = [
         children:[
             {
                 key: 'article/list',
-                name: '文章列表'
+                name: '文章列表'
             },{
                 key: 'article/new',
-                name: '发布文章'
+                name: '发布文章'
             }
         ]
     },{
